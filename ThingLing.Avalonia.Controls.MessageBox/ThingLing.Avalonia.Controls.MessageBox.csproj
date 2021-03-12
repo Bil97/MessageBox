@@ -5,6 +5,8 @@
     <Nullable>enable</Nullable>
     <RootNamespace>ThingLing.Avalonia.Controls</RootNamespace>
     <Description>Displays amessage box. It is a nomal Avalonia window customised to be used as a simple dialog to accept Yes, No, Ok, Cancel and None responses from the user.</Description>
+    <PackageProjectUrl>https://github.com/Bil97/MessageBox</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Bil97/MessageBox</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Images\close.png" />
