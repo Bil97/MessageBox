@@ -1,3 +1,6 @@
+# MessageBox
+Displays amessage box. It is a nomal Avalonia window customised to be used as a simple dialog to accept Yes, No, Ok, Cancel and None responses from the user.
+
 **Using:**
 
 ```c#
@@ -47,12 +50,12 @@ public Class MainWindow : Window
 {
 	public static MainWindow Window {get; set;}
 
-​	public MainWindow()
-​	{
-​		InitalizeComponent();
+	public MainWindow()
+	{
+		InitalizeComponent();
 
-​		Window = this;
-​	}
+		Window = this;
+	}
 } 
 ```
 
@@ -65,23 +68,23 @@ public class Users : UserControl
 	{
 		InitializeComponent();
 
-​		TextBlock textBlock = new TextBlock;
-​		MessageBoxResult result;
-​        var task = new Task(async () =>
-​          {
-​              result = await MessageBox.ShowAsync(MainWindow.Window, "Hello world 		 message", "Title", MessageBoxButton.YesNoCancel,MessageBoxImage.Warning);
+		TextBlock textBlock = new TextBlock;
+	MessageBoxResult result;
+        var task = new Task(async () =>
+          {
+              result = await MessageBox.ShowAsync(MainWindow.Window, "Hello world message", "Title", MessageBoxButton.YesNoCancel,MessageBoxImage.Warning);
 
-​              textBlock.Text=result.ToString();
-​          });
-​	}
+              textBlock.Text=result.ToString();
+         });
+ }
 
-​	//// OR from async method
+	//// OR from async method
 
-​	async OnClick(object sender, RoutedEventArgs e)
-​	{
-​		var mb = await MessageBox.ShowAsync(MainWindow.Window, "Hello world, this message box is working fine", "Hello title", MessageBoxButton.OKCancel, MessageBoxImage.Information);
-​       	this.FindControl<TextBlock>("result").Text = mb.ToString();
-​	}
+	async OnClick(object sender, RoutedEventArgs e)
+	{
+		var mb = await MessageBox.ShowAsync(MainWindow.Window, "Hello world, this message box is working fine", "Hello title", MessageBoxButton.OKCancel, MessageBoxImage.Information);
+       	this.FindControl<TextBlock>("result").Text = mb.ToString();
+	}
 
 }
 ```
