@@ -18,7 +18,7 @@ namespace TestApp
 
         private async void Button_Click(object? sender, global::Avalonia.Interactivity.RoutedEventArgs e)
         {
-            var mb = await MessageBox.ShowAsync(this, "Hello world, this message box is working fine", "Hello title", MessageBoxButton.OkCancel, MessageBoxImage.Information, MessageBoxResult.Cancel);
+            var mb = await MessageBox.ShowAsync(this, "Hello world, this message box is working fine", "Hello title", MessageBoxButton.OkCancel, MessageBoxImage.Stop, MessageBoxResult.Cancel);
             this.FindControl<TextBlock>("result").Text = mb.ToString();
         }
     }

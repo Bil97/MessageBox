@@ -92,7 +92,7 @@ namespace ThingLing.Avalonia.Controls
                     break;
                 case MessageBoxImage.Stop:
                     _window.IconImage.Source =
-                        LoadBitmap("avares://ThingLing.Avalonia.Controls.MessageBox/Images/No-Entry.png");
+                        LoadBitmap("avares://ThingLing.Avalonia.Controls.MessageBox/Images/No-entry.png");
                     break;
                 case MessageBoxImage.Warning:
                     _window.IconImage.Source =

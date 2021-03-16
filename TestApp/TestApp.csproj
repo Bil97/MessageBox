@@ -9,6 +9,8 @@
     <PackageReference Include="Avalonia" Version="0.10.0" />
     <PackageReference Include="Avalonia.Desktop" Version="0.10.0" />
     <PackageReference Include="Avalonia.Diagnostics" Version="0.10.0" />
-    <PackageReference Include="ThingLing.Avalonia.Controls.MessageBox" Version="1.0.1" />
    </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ThingLing.Avalonia.Controls.MessageBox\ThingLing.Avalonia.Controls.MessageBox.csproj" />
+  </ItemGroup>
 </Project>

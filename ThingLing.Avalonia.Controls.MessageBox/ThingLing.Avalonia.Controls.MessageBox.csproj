@@ -11,10 +11,9 @@
     <Authors>Bil Ly</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <SignAssembly>false</SignAssembly>
-    <PackageLicenseExpression></PackageLicenseExpression>
-    <PackageLicenseFile>licence.txt</PackageLicenseFile>
     <PackageVersion>1.0.1</PackageVersion>
-    <PackageLicenseUrl>D:\Programming\Projects\ThingLing\licence.txt</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageLicenseFile>licence.txt</PackageLicenseFile>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Images\close.png" />
@@ -22,7 +21,11 @@
     <None Remove="Images\Info.png" />
     <None Remove="Images\No-entry.png" />
     <None Remove="Images\Warning.png" />
-    <None Include="..\..\..\..\licence.txt">
+    <None Include="..\..\..\licence.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\..\licence.txt">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>

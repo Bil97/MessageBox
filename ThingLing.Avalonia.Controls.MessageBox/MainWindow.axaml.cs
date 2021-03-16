@@ -226,11 +226,5 @@ namespace ThingLing.Avalonia.Controls
         {
             BeginMoveDrag(e);
         }
-
-        private static IBitmap LoadBitmap(string uri)
-        {
-            var assets = AvaloniaLocator.Current.GetService<IAssetLoader>();
-            return new Bitmap(assets.Open(new Uri(uri)));
-        }
     }
 }
